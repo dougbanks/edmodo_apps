@@ -1,0 +1,62 @@
+.wordSearch .wordSearchGrid {
+  border-collapse:collapse;
+  font-family:'Helvetica','Arial',sans-serif;
+  font-size:125%;
+  height:100%;
+  position:absolute;
+  table-layout:fixed;
+  width:100%;
+  z-index:20;
+}
+.wordSearch .wordSearchGrid td {
+  text-align:center;
+}
+.wordSearch .bandContainer {
+  height:100%;
+  position:absolute;
+  width:100%;
+  z-index:10;
+}
+.wordSearch .band {
+  position:absolute;
+}
+.wordSearch .band .stretch {
+  -webkit-transform-origin:0 50%;
+  -moz-transform-origin:0 50%;
+  background-color:#699;
+  height:20px;
+  left:0;
+  opacity:0.5;
+  position:absolute;
+  top:-10px;
+  width:1;
+  z-index:90;
+}
+.wordSearch .band .startCap, .wordSearch .band .endCap {
+  -webkit-border-radius: 11px;
+     -moz-border-radius: 11px;
+  -webkit-transform-style: preserve-3d;
+  background-color:#699;
+  height:22px;
+  left:-11px;
+  position:absolute;
+  top:-11px;
+  width:22px;
+  z-index:100;
+}
+
+.wordSearch .finished.band .stretch {
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(#6a6), to(#66a));
+  background: -moz-linear-gradient(to right, #6a6, #66a);
+}
+.wordSearch .finishedReverse.band .endCap, .wordSearch .finished.band .startCap {
+  background-color:#696;
+}
+
+.wordSearch .finishedReverse.band .stretch {
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(#66a), to(#6a6));
+  background: -moz-linear-gradient(to right, #66a, #6a6);
+}
+.wordSearch .finishedReverse.band .startCap, .wordSearch .finished.band .endCap {
+  background-color:#669;
+}

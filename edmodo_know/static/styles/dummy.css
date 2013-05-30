@@ -1,0 +1,108 @@
+/* GENERAL UI STUFF FOR APPS */
+body {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+     -moz-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+  margin:0;
+}
+
+/* GENERAL SLIDING STYLES */
+.slideOutLeft {
+  -webkit-transform: translate3d(-320px,0,0);
+     -moz-transform: translate(-320px,0);
+}
+.slideOutRight {
+  -webkit-transform: translate3d(320px,0,0);
+     -moz-transform: translate(320px,0);
+}
+.fadeOut {
+  opacity:0 !important;
+}
+.slideIn {
+  -webkit-transform: translate3d(0,0,0);
+     -moz-transform: translate(0,0);
+}
+
+/* SCREEN STYLES */
+#screenContainer {
+  height:100%;
+  overflow:hidden;
+  position:absolute;
+  top:0;
+  width:100%;
+}
+.screen {
+  -webkit-transition-duration: 330ms;
+     -moz-transition-duration: 330ms;
+  -webkit-transition-property: opacity, -webkit-transform;
+     -moz-transition-property: opacity,    -moz-transform;
+  -webkit-transition-timing-function: ease-out;
+     -moz-transition-timing-function: ease-out;
+  height:100%;
+  position:absolute;
+  top:0;
+  width:100%;
+}
+
+/* LOADING SCREEN */
+.loadingScreen {
+  -webkit-transition: opacity 400ms ease-in-out;
+     -moz-transition: opacity 400ms ease-in-out;
+  color:#555;
+  font-size:80%;
+  height:100%;
+  text-align:center;
+  width:100%;
+  background-color:black;
+}
+.loadingScreen.fadeOut {
+  opacity:0;
+}
+
+/* PROGRESS BAR */
+.progressBar {
+  background-color:#444;
+  height:16px;
+  margin:5px 40px 0;
+  overflow:hidden;
+  padding:2px;
+  width:200px;
+}
+.progressBar > div {
+  height:100%;
+  overflow:hidden;
+  position:relative;
+  width:100%;
+}
+.progressBar .bar {
+  -webkit-transition: -webkit-transform 100ms linear;
+     -moz-transition:    -moz-transform 100ms linear;
+  background-color:#333;
+  position:absolute;
+}
+
+.progressBar.vertical .bar {
+  -webkit-transform: translate3d(0,100%, 0);
+     -moz-transform: translate(0, 100%);
+  width:16px;
+  height:100%;
+}
+
+.progressBar.horizontal .bar {
+  -webkit-transform: translate3d(-100%,0,0);
+     -moz-transform: translate(-100%,0);
+  height:16px;
+  width:100%;
+}
+
+/* VERTICAL CENTERING */
+.valignContainer {
+  display:table;
+  height:100%;
+  width:100%;
+}
+.valignContent {
+  display:table-cell;
+  vertical-align:middle;
+}
