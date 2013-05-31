@@ -6,9 +6,9 @@
  * Time: 10:02 AM
  * To change this template use File | Settings | File Templates.
  */
-echo 'hello';
-echo 'hello2';
-echo 'hello there';
-echo 'hello3';
-echo 'hello4';
+echo 'hello<br>';
+echo 'hello2<br>';
+echo 'hello there<br>';
+echo 'hello3<br>';
+echo 'hello4<br>';
 ?>
