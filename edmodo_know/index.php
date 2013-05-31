@@ -76,7 +76,7 @@ $scripts = array(
 <body >
 <?php
 echo "I love you!<br>";
-echo "I love you still so much!  I'm da worst!<br>";
+echo "I love you still so much??!<br>";
 echo "I love you!2<br>";
 echo "I love you!3<br>";
 ?>
